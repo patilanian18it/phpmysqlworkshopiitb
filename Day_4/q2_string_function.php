@@ -7,8 +7,8 @@
 	echo strtolower($s).'<br>';
 	echo strtoupper($s).'<br>';
 	$str = "Hmrrb thjk jk nhn";
-    $from = "rbmnjk";
-    $to = "loepis";
-    echo strtr($str, $from, $to).'<br>';
+    	$from = "rbmnjk";
+    	$to = "loepis";
+    	echo strtr($str, $from, $to).'<br>';
 
 ?>
