@@ -18,15 +18,19 @@
 if(isset($_POST['submit'])){
 	$filename = basename($_FILES["fileToUpload"]["name"]);
  	$size = filesize($_FILES["fileToUpload"]["tmp_name"]);
- 	if(is_writable($_FILES["fileToUpload"]["tmp_name"]))
- 		echo "true";
+ 	$file_type=$_FILES['fileToUpload']['type'];
+ 	$extension= pathinfo(basename($_FILES['fileToUpload']['name']),PATHINFO_EXTENSION);
  	echo "<br><table style='width: 100%' border='1'>
 				<tr>
 					<th>File Name</th>
+					<th>Extension</th>
+					<th>Type</th>
 					<th>Size (Bytes)</th>
 				</tr>
 				<tr>
 				<td>$filename</td>
+				<td>$extension</td>
+				<td>$file_type</td>
 				<td>$size</td>
 				</tr>
 			</table>";
