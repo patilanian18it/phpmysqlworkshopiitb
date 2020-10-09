@@ -1,0 +1,156 @@
+@import "compass/css3";
+@font-face {
+  font-family: Lato-Regular;
+  src: url('../fonts/Lato-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url('../fonts/Lato-Bold.ttf'); 
+}
+
+body {
+  font-family: lato-Regular;
+}
+
+button {
+  background-color: #1e63d4;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 25px;
+  outline: 0;
+}
+
+h1 {
+  font-size: 25px;
+  ;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  width: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  text-align: left;
+  border: 0px solid #ccc;
+  border-radius: 25px;
+  outline: 0;
+  margin: 15px -5px;
+}
+
+.vl {
+  border-left: 6px solid;
+  color: #dedede;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  bottom: 20%;
+}
+
+.admin {
+  position: absolute;
+  left: 20%;
+  top: 30%
+}
+
+.student {
+  position: absolute;
+  right: 20%;
+  top: 30%;
+}
+
+.button2 {
+  background-color: #ffff;
+  color: black;
+  padding: 10px 35px;
+  margin: 20px 0px;
+  border: 3px solid #000;
+  border-radius: 25px;
+  outline: 0;
+}
+
+.button2:hover,
+.button2:focus {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color .50s;
+}
+
+a {
+  color: black;
+}
+
+.hidden {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  display: none;
+}
+
+.hidden-content {
+  position: absolute;
+  padding: 30px;
+  background-color: #fefefe;
+  width: 350px;
+  height: 400px;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: -5px;
+  text-align: center;
+  color: #d4d4d4;
+  font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+  color: #757575;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.25s;
+  animation: animatezoom 0.25s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
