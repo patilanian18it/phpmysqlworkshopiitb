@@ -156,7 +156,7 @@
 			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
       		<label for="afname">First Name</label>
 			<input type="text" name="afname" required>
-      		<label for="alname">Last Name</label>s
+      		<label for="alname">Last Name</label>
 			<input type="text" name="alname" required>
       		<label for="auname">Email Address</label>
 			<input type="email" name="auname" required>
